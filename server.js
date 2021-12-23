@@ -39,11 +39,11 @@ app.get("/dependency/version-check/:dependency_name", function (req, res) {
   // To extract the current version of the dependency in query parameter
   let currentVersion = devDependencyJSON.dependencies[dependency_name];
 
-  //check again
+  // If the passed dependency name is not in key: dependency check key:devDependency
   if(!currentVersion){
     currentVersion = devDependencyJSON.devDependencies[dependency_name];
   }
-
+// If the passed dependency name is not in key: dependency or key: devDependency then...
   if (!currentVersion) {
     return res
       .status(404)
