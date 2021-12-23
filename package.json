@@ -1,0 +1,14 @@
+{
+  "name": "reach-test",
+  "version": "1.0.0",
+  "description": "reach assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wendy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
